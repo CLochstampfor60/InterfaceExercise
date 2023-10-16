@@ -8,7 +8,7 @@ namespace InterfaceExercise
         {
             //TODO Be sure to follow BEST PRACTICES when creating classes and interfaces
 
-            //Create 2 Interfaces called IVehicle & ICompany
+            //DONE Create 2 Interfaces called IVehicle & ICompany
 
             //Create 3 classes called Car , Truck , & SUV
 
