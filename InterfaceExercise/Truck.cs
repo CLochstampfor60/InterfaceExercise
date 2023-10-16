@@ -13,13 +13,13 @@ namespace InterfaceExercise
         public bool HasFourWheelDrive { get; set; }
 
         //IVehicle interface
-        public string Year { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Make { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Model { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int NumberOfWheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Year { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public string NumberOfWheels { get; set; }
 
         //ICompany interface
-        string ICompany.CountryOrigin { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string ICompany.Logo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string CountryOrigin { get; set; }
+        public string Logo { get; set; }
     }
 }

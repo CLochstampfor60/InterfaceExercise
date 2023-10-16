@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise 
 {
-    internal class SUV : IVehicle
+    internal class SUV : IVehicle, ICompany
     {
+        //Unique classes to SUV
         public string CargoHoldSize { get; set; }
-        public string BestForFamilies { get; set; }
-        public string Year { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Make { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Model { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int NumberOfWheels { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool BestForFamilies { get; set; }
+
+        //IVehicle interface
+        public string Year { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public string NumberOfWheels { get; set; }
+
+        //ICompany interface
+        public string CountryOrigin { get; set; }
+        public string Logo { get; set; }
     }
 }
