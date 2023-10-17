@@ -12,6 +12,7 @@ namespace InterfaceExercise
         public void PrintInfo()
         {
             Console.WriteLine($"Cargo Hold Size: {CargoHoldSize}.");
+            Console.WriteLine();
             Console.WriteLine($"Best type of vehicle for families: {BestForFamilies}.");
         }
         public string CargoHoldSize { get; set; }

@@ -12,6 +12,7 @@ namespace InterfaceExercise
         public void PrintInfo()
         {
             Console.WriteLine($"Bed Size: {BedSize}.");
+            Console.WriteLine();
             Console.WriteLine($"This vehicle has four-wheel drive: {HasFourWheelDrive}.");
         }
         public string BedSize { get; set; }

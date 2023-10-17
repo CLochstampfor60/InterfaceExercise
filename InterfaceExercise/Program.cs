@@ -41,7 +41,7 @@ Car car = new Car()
     NumberOfWheels = "four",
     CountryOrigin = "United States of America",
     Logo = "The Ford Mustang logo is a galloping stallion. Ford designers met to decide how to communicate the car's Americanness and namesake with an icon and settled on a proposal by Phil Clark. He'd been working on a horse-based design for a while, and it nailed the brief.",
-    TrunkSize = "10 to 13 feet.",
+    TrunkSize = "10 to 13 feet",
     BestForSingles = true,
 };
 
@@ -53,7 +53,7 @@ SUV suv = new SUV()
     NumberOfWheels = "four",
     CountryOrigin = "Japan",
     Logo = "The Honda logo emblem has always been a version of the stylized letter “H” on all products for the brand. The sign is symbolic of the “Honda” name, but it has meaning beyond this too. According to some experts, the symbol is also intended to look like a classic armchair, to symbolize safety.",
-    CargoHoldSize = "If you want to seat five and use the space behind the second row, you have 39.3 cubic feet of space. Fold down that back row, and you have 75.5 cubic feet of cargo room at your disposal.",
+    CargoHoldSize = "If you want to seat five and use the space behind the second row, you have 39.3 cubic feet of space. Fold down that back row, and you have 75.5 cubic feet of cargo room at your disposal",
     BestForFamilies = true,
 
 };
@@ -71,10 +71,28 @@ Truck truck = new Truck()
 
 };
 
-var vehicles = new List<IVehicle>() { car, truck, suv };
-/*vehicles.Add(car);
+/*https://stackoverflow.com/questions/5716799/multiple-interfaces-contained-in-one-listt*/
+var vehicles = new List<IVehicle>();
+vehicles.Add(car);
 vehicles.Add(suv);
-vehicles.Add(truck);*/
+vehicles.Add(truck);
+/*public class Automobiles : IVehicle, ICompany
+{
+
+    string IVehicle.Year { get; set; }
+    string IVehicle.Make { get; set; }
+    string IVehicle.Model { get; set; }
+    string IVehicle.NumberOfWheels { get; set; }
+    string ICompany.CountryOrigin { get; set; }
+    string ICompany.Logo { get; set; }
+
+    void IVehicle.PrintInfo()
+    {
+        throw new NotImplementedException();
+    }
+}*/
+
+
 
 //Creatively display and organize their values
 foreach (var vehicle in vehicles)
@@ -83,8 +101,10 @@ foreach (var vehicle in vehicles)
     Console.WriteLine($"Make: {vehicle.Make}");
     Console.WriteLine($"Model: {vehicle.Model}");
     Console.WriteLine($"Number of Wheels: {vehicle.NumberOfWheels}");
-/*    Console.WriteLine($"Country Origin: {vehicle.CountryOrigin}");
-    Console.WriteLine($"Logo: {vehicle.Logo}");*/
+    Console.WriteLine($"Country Origin: {vehicle.CountryOrigin}");
+    Console.WriteLine();
+    Console.WriteLine($"Logo: {vehicle.Logo}");
+    Console.WriteLine();
     vehicle.PrintInfo();
     Console.WriteLine("----------");
     Console.WriteLine();

@@ -13,6 +13,7 @@ namespace InterfaceExercise
         public void PrintInfo()
         {
             Console.WriteLine($"Trunk Size: {TrunkSize}.");
+            Console.WriteLine();
             Console.WriteLine($"Best type of vehicle for single people: {BestForSingles}.");
         }
         public string TrunkSize {  get; set; } 

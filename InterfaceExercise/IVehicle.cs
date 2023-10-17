@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
-    internal interface IVehicle
+    internal interface IVehicle: ICompany
     {
         public string Year { get; set; }
         public string Make {  get; set; }
