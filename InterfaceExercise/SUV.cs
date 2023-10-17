@@ -9,6 +9,11 @@ namespace InterfaceExercise
     internal class SUV : IVehicle, ICompany
     {
         //Unique classes to SUV
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Cargo Hold Size: {CargoHoldSize}.");
+            Console.WriteLine($"Best type of vehicle for families: {BestForFamilies}.");
+        }
         public string CargoHoldSize { get; set; }
         public bool BestForFamilies { get; set; }
 
@@ -21,5 +26,7 @@ namespace InterfaceExercise
         //ICompany interface
         public string CountryOrigin { get; set; }
         public string Logo { get; set; }
+
+
     }
 }

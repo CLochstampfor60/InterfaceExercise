@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
-    internal interface ICompany
+    internal interface ICompany 
     {
         public string CountryOrigin { get; set; }
-        public bool HasLogo { get; set; }
+        public string Logo { get; set; }
 /*        public string Windows { get; set; }
         public string HubCaps { get; set; }*/
     }

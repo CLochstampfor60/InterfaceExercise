@@ -10,7 +10,12 @@ namespace InterfaceExercise
     internal class Car : IVehicle, ICompany
     {
         //Unique classes to Car
-        public string TrunkSize {  get; set; }
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Trunk Size: {TrunkSize}.");
+            Console.WriteLine($"Best type of vehicle for single people: {BestForSingles}.");
+        }
+        public string TrunkSize {  get; set; } 
         public bool BestForSingles { get; set;}
 
         //IVehicle interface

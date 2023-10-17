@@ -9,6 +9,11 @@ namespace InterfaceExercise
     internal class Truck : IVehicle, ICompany
     {
         //Unique classes to Truck
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Bed Size: {BedSize}.");
+            Console.WriteLine($"This vehicle has four-wheel drive: {HasFourWheelDrive}.");
+        }
         public string BedSize { get; set; }
         public bool HasFourWheelDrive { get; set; }
 
